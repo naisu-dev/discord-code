@@ -17,6 +17,6 @@ async def on_ready():
 async def code(interaction: discord.Interaction, code: str):
   if code == "naisuさんnaisu":
     await interaction.user.send("^^")
-  await interaction.response.send_message("Successful")
+  await interaction.response.send_message("Successful", ephemeral=True)
 
 bot.run(TOKEN)
