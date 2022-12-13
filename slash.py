@@ -14,7 +14,7 @@ async def on_ready():
   await tree.sync()
 
 @tree.command(name="code")
-async def code(interaction: discord.Interaction, code):
+async def code(interaction: discord.Interaction, code: str):
   if code == "naisuさんnaisu":
     await interaction.user.send("^^")
 
